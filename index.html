@@ -115,7 +115,6 @@ function open(p){
 }
 
 let DL=null;
-const CV=[["Curriculo_Goncalo_Guimaraes.pdf","Descarregar currículo"]];
 const btns=a=>a.map(([f,l],i)=>`<button class="btn alt" data-f="${f}">${l}</button>`).join("");
 const dl=p=>FM[p.t]?btns(FM[p.t]):"";
 function fillCV(){const e=document.getElementById("cv");if(e)e.innerHTML=btns(CV)}
